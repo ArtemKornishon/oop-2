@@ -1,5 +1,6 @@
 import Bowerman from '../bowerman';
 
+test('Creating new Character', () => {
 const checkClass = new Bowerman('John', 'bowerman');
 const correctArg = {
   name: 'John',
@@ -10,6 +11,5 @@ const correctArg = {
   defence: 25,
 };
 
-test('Creating new Character', () => {
   expect(checkClass).toEqual(correctArg);
 });
